@@ -317,6 +317,7 @@ module OmniAuth
             context_title: title,
             consumer: { context_label: label },
             roles: claims[OmniAuth::Lti13::Claims::ROLES],
+            raw_info: claims
           }
         )
       end
